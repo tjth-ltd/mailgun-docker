@@ -1,0 +1,9 @@
+version: '2'
+services:
+  mailer:
+    image: php:7.2-apache
+    container_name: mailgun-form
+    ports:
+      - '8091:80'
+    volumes:
+      - './website/:/var/www/html/'
